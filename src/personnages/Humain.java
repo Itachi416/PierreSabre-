@@ -11,16 +11,16 @@ public class Humain {
         this.argent = argent;
     }
 
-    private void parler(String texte) {
+    protected void parler(String texte) {
         System.out.println("(" + nom + ") - " + texte);
     }
 
     public String getNom() {
-        return this.nom;
+        return nom;
     }
 
     public int getArgent() {
-        return this.argent;
+        return argent;
     }
 
     public void direBonjour() {
@@ -42,7 +42,14 @@ public class Humain {
     }
 
 
-    private void perdreArgent(int perte) {
+    protected void perdreArgent(int perte) {
         argent -= perte;
     }
-}
+    
+    protected void gagnerArgent(int gain) {
+    	argent += gain;
+    }
+   }
+
+
+
