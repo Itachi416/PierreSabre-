@@ -19,7 +19,7 @@ public class Humain {
         return nom;
     }
 
-    public int getArgent() {
+    protected int getArgent() {
         return argent;
     }
 
