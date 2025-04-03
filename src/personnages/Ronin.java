@@ -18,4 +18,14 @@ public class Ronin extends Humain {
 	}
 
 }
-
+	public void provoquer(Yakuza adversaire) {
+		if (adversaire.getReputation() < honneur ) {
+			parler(" Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand !");
+			parler(" Je t’ai eu petit yakusa!");
+			gagnerArgent(adversaire.perdre());
+		}
+		else {
+			
+			
+	}
+	}
